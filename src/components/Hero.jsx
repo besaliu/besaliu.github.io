@@ -119,7 +119,7 @@ const Hero = () => {
             transition={{ delay: 1.3 }}
           >
             CS Student at UCSC building next-generation web applications with React, AI/ML, 
-            and cloud technologies. Currently driving <span className="text-cyber-green font-semibold">200% client growth</span> 
+            and cloud technologies. Currently driving <span className="text-cyber-green font-semibold"> 200% client growth</span> 
             as a Software Engineer Intern.
           </motion.p>
 
