@@ -42,7 +42,7 @@ const Projects = () => {
       ],
       technologies: ["React", "Node.js", "Microsoft Graph API", "Express", "MongoDB", "Azure"],
       github: "#",
-      demo: "www.beyondcomputer.com",
+      demo: "https://beyondcomputer.netlify.app/",
       impact: "200% Growth",
       color: "from-cyber-pink to-cyber-purple"
     },
