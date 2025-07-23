@@ -19,7 +19,7 @@ const Hero = () => {
 
   const stats = [
     { value: '200%', label: 'Client Growth' },
-    { value: '86%', label: 'ML Accuracy' },
+    { value: '95%', label: 'AI Consistency' },
     { value: '10+', label: 'Tech Stack' },
     { value: '3+', label: 'Years Experience' }
   ];
@@ -119,7 +119,7 @@ const Hero = () => {
             transition={{ delay: 1.3 }}
           >
             CS Student at UCSC building next-generation web applications with React, AI/ML, 
-            and cloud technologies. Currently driving <span className="text-cyber-green font-semibold">200% client growth </span> 
+            and cloud technologies. Currently driving <span className="text-cyber-green font-semibold">    200% client growth </span> 
             as a Software Engineer Intern.
           </motion.p>
 

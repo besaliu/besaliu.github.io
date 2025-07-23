@@ -19,7 +19,7 @@ const About = () => {
     {
       icon: Brain,
       title: "AI/ML Specialist",
-      description: "Built ML model with 86% prediction accuracy on real LAPD crime data",
+      description: "Fine-tuned 4B parameter AI model achieving 95% personality consistency in email responses",
       color: "text-cyber-purple"
     },
     {
@@ -113,12 +113,12 @@ const About = () => {
                 <span className="text-cyber-green font-bold text-xl">+200%</span>
               </div>
               <div className="flex items-center justify-between">
-                <span className="text-gray-300">ML Model Accuracy</span>
-                <span className="text-cyber-blue font-bold text-xl">86%</span>
+                <span className="text-gray-300">AI Model Consistency</span>
+                <span className="text-cyber-blue font-bold text-xl">95%</span>
               </div>
               <div className="flex items-center justify-between">
-                <span className="text-gray-300">Time Saved (Monthly)</span>
-                <span className="text-cyber-purple font-bold text-xl">10+ hrs</span>
+                <span className="text-gray-300">Email Response Time Saved</span>
+                <span className="text-cyber-purple font-bold text-xl">73%</span>
               </div>
               <div className="flex items-center justify-between">
                 <span className="text-gray-300">Data Breach Reduction</span>

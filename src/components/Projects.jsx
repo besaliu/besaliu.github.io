@@ -47,21 +47,21 @@ const Projects = () => {
       color: "from-cyber-pink to-cyber-purple"
     },
     {
-      title: "LA Crime Predictor",
-      description: "Advanced machine learning model trained on real LAPD crime data, achieving 86% prediction accuracy within a two-week simulation period.",
-      period: "December 2023 – January 2024",
+      title: "AI-Powered Email Response Assistant",
+      description: "Fine-tuned a 4B parameter Gemma model using Unsloth and LoRA techniques on 500+ email-response training pairs, achieving 95% personality consistency across diverse business communication scenarios.",
+      period: "June 2025 – July 2025",
       icon: Brain,
       image: "/api/placeholder/400/300",
       highlights: [
-        "86% prediction accuracy achieved",
-        "Processed 90,000+ crime data entries",
-        "Advanced data cleaning and preprocessing",
-        "13-page research paper published"
+        "95% personality consistency achieved",
+        "73% reduction in email response drafting time",
+        "100+ email responses processed daily",
+        "$200+/month cost savings vs cloud alternatives"
       ],
-      technologies: ["Python", "Machine Learning", "Pandas", "Scikit-learn", "Data Analysis", "Research"],
+      technologies: ["Python", "Gemma Model", "Unsloth", "LoRA", "Machine Learning", "NLP", "JSON", "Tokenization"],
       github: "#",
       demo: "#",
-      impact: "86% Accuracy",
+      impact: "95% Consistency",
       color: "from-cyber-green to-cyber-blue"
     },
     {
@@ -212,12 +212,12 @@ const Projects = () => {
                 <div className="text-gray-400 text-sm">Client Growth</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-cyber-blue mb-2">86%</div>
-                <div className="text-gray-400 text-sm">ML Accuracy</div>
+                <div className="text-3xl font-bold text-cyber-blue mb-2">95%</div>
+                <div className="text-gray-400 text-sm">AI Consistency</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-cyber-purple mb-2">90K+</div>
-                <div className="text-gray-400 text-sm">Data Points</div>
+                <div className="text-3xl font-bold text-cyber-purple mb-2">500+</div>
+                <div className="text-gray-400 text-sm">Training Pairs</div>
               </div>
             </div>
           </div>
