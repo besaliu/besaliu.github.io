@@ -11,75 +11,71 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Canvas to Notion Integration",
-      description: "Full-stack web application and Chrome extension that streamlines the synchronization of student Canvas assignments into customizable Notion templates.",
-      period: "March 2025 – June 2025",
-      icon: Calendar,
-      image: "/api/placeholder/400/300",
-      highlights: [
-        "Integrated Canvas and Notion APIs for real-time updates",
-        "Implemented OAuth authentication with Firebase",
-        "Custom API endpoints for data transformation",
-        "Seamless user experience for students"
-      ],
-      technologies: ["React", "Node.js", "Canvas API", "Notion API", "Firebase", "OAuth", "Chrome Extension"],
-      github: "#",
-      demo: "https://canvastonotion.io/",
-      impact: "Student Productivity Tool",
-      color: "from-cyber-blue to-cyber-purple"
-    },
-    {
-      title: "Full-Stack Client Portal",
-      description: "Comprehensive client onboarding and management system built for Beyond Computer LLC, resulting in 200% increase in client acquisitions.",
-      period: "Current Project",
-      icon: Target,
-      image: "/api/placeholder/400/300",
-      highlights: [
-        "200% increase in client acquisitions",
-        "Microsoft Graph API integration",
-        "Automated onboarding workflows",
-        "Modern responsive design"
-      ],
-      technologies: ["React", "Node.js", "Microsoft Graph API", "Express", "MongoDB", "Azure"],
-      github: "#",
-      demo: "https://beyondcomputer.netlify.app/",
-      impact: "200% Growth",
-      color: "from-cyber-pink to-cyber-purple"
-    },
-    {
       title: "AI-Powered Email Response Assistant",
-      description: "Fine-tuned a 4B parameter Gemma model using Unsloth and LoRA techniques on 500+ email-response training pairs, achieving 95% personality consistency across diverse business communication scenarios.",
+      description: "Fine-tuned a 4B Gemma model with Unsloth + LoRA on 500+ training pairs to draft business emails with 95% personality consistency.",
       period: "June 2025 – July 2025",
       icon: Brain,
       image: "/api/placeholder/400/300",
       highlights: [
-        "95% personality consistency achieved",
-        "73% reduction in email response drafting time",
-        "100+ email responses processed daily",
-        "$200+/month cost savings vs cloud alternatives"
+        "73% reduction in drafting time",
+        "100+ responses processed daily locally",
+        "$200+/month saved vs cloud APIs"
       ],
-      technologies: ["Python", "Gemma Model", "Unsloth", "LoRA", "Machine Learning", "NLP", "JSON", "Tokenization"],
+      technologies: ["Python", "Gemma", "Unsloth", "LoRA", "LangChain"],
       github: "#",
       demo: "#",
       impact: "95% Consistency",
       color: "from-cyber-green to-cyber-blue"
     },
     {
-      title: "Data Analytics Pipeline",
-      description: "Scalable data collection and analysis system with cookie and IP tracking, improving user behavior analysis efficiency by 30%.",
-      period: "Research Project",
+      title: "Full-Stack Client Portal",
+      description: "Automated client onboarding and responsive UI that contributed to 200% increase in client acquisitions for Beyond Computer LLC.",
+      period: "June 2025 – September 2025",
+      icon: Target,
+      image: "/api/placeholder/400/300",
+      highlights: [
+        "Microsoft Graph API integration",
+        "Automated onboarding workflows",
+        "Modern responsive design"
+      ],
+      technologies: ["React", "Node.js", "Microsoft Graph API", "Express", "MongoDB"],
+      github: "#",
+      demo: "https://beyondcomputer.netlify.app/",
+      impact: "200% Growth",
+      color: "from-cyber-pink to-cyber-purple"
+    },
+    {
+      title: "Investment Document Summarizer",
+      description: "Automated summarization pipeline converting pitch decks and financials into 2-page analyst briefs, reducing review time by 60%.",
+      period: "December 2024 – May 2025",
       icon: Database,
       image: "/api/placeholder/400/300",
       highlights: [
-        "30% efficiency improvement",
-        "Google Cloud Natural Language API",
-        "Multi-cohort data analysis",
-        "Privacy-focused design"
+        "OpenAI API + LangChain",
+        "Standardized brief generation",
+        "Enabled +40% opportunities reviewed"
       ],
-      technologies: ["Python", "Google Cloud", "Natural Language API", "Data Pipeline", "Analytics"],
+      technologies: ["TypeScript", "Node.js", "OpenAI", "LangChain"],
       github: "#",
       demo: "#",
-      impact: "30% Efficiency",
+      impact: "60% Faster",
+      color: "from-cyber-blue to-cyber-purple"
+    },
+    {
+      title: "Real-time KPI Analytics Dashboard",
+      description: "KPI dashboard aggregating metrics across 200+ Web3 projects with shadcn/ui and TailwindCSS.",
+      period: "December 2024 – May 2025",
+      icon: Calendar,
+      image: "/api/placeholder/400/300",
+      highlights: [
+        "200+ projects tracked",
+        "Real-time metrics aggregation",
+        "TypeScript + Node.js backend"
+      ],
+      technologies: ["TypeScript", "Node.js", "TailwindCSS", "shadcn/ui"],
+      github: "#",
+      demo: "#",
+      impact: "200+ Projects",
       color: "from-cyber-purple to-cyber-pink"
     }
   ];

@@ -77,7 +77,7 @@ const Contact = () => {
     {
       icon: ExternalLink,
       label: "Portfolio",
-      href: "https://besaliu.github.io",
+      href: "https://besaliudev.netlify.app/",
       color: "hover:text-cyber-purple"
     }
   ];

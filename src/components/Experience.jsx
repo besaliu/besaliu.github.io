@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Briefcase, TrendingUp, Shield, Database, Users } from 'lucide-react';
+import { Briefcase, TrendingUp, Shield, Database, Users, Cloud, Activity, Brain } from 'lucide-react';
 
 const Experience = () => {
   const [ref, inView] = useInView({
@@ -11,54 +11,79 @@ const Experience = () => {
 
   const experiences = [
     {
+      title: "Software Engineering Fellow",
+      company: "Movement Labs",
+      location: "Remote",
+      period: "September 2025 – Present",
+      icon: Cloud,
+      highlights: [
+        {
+          icon: Activity,
+          text: "Architected and deployed autonomous AI agent systems on Google Cloud Run using Vertex AI and Python, orchestrating multi-step conversational workflows that increased voter conversion rates by 18% during the 2025 election cycle.",
+          impact: "18% Conversion"
+        },
+        {
+          icon: Database,
+          text: "Engineered scalable agentic AI pipelines leveraging GCP, Vertex AI LLMs, and Cloud Functions to process 1M+ voter interactions",
+          impact: "1M+ Events"
+        },
+        {
+          icon: Shield,
+          text: "Implemented production-grade AI agent infrastructure with automated testing, monitoring, and fail-safes using Cloud Logging and Cloud Monitoring, reducing manual intervention by 67% and ensuring compliance with campaign messaging regulations.",
+          impact: "67% Fewer Interventions"
+        }
+      ],
+      tags: ["GCP", "Vertex AI", "Cloud Run", "Cloud Functions", "Python", "Monitoring"]
+    },
+    {
       title: "Software Engineer Intern & Network Security Engineer Intern",
       company: "Beyond Computer LLC",
       location: "Petaluma, CA",
-      period: "June 2025 – Present",
+      period: "June 2025 – September 2025",
       icon: Briefcase,
       highlights: [
         {
           icon: TrendingUp,
-          text: "Engineered a full-stack onboarding and website modernization solution (React, Node.js, Microsoft Graph API), driving a 200% increase in client acquisitions",
+          text: "Engineered a full-stack solution featuring responsive UI redesign and automated client onboarding workflows (React, Node.js, Microsoft Graph API), driving a 200% increase in client acquisitions.",
           impact: "200% Growth"
         },
         {
           icon: Shield,
-          text: "Automated device management with PowerShell and Datto RMM API, saving 10+ hours/month and enhancing security compliance",
-          impact: "10+ hrs/month saved"
+          text: "Automated device management with PowerShell and Datto RMM API, saving 10+ hours/month and enhancing security compliance.",
+          impact: "10+ hrs/mo Saved"
         },
         {
           icon: Database,
-          text: "Reduced potential data breach impact by 10% through proactive monitoring and rapid incident response, aligning with industry benchmarks",
-          impact: "10% Risk Reduction"
+          text: "Reduced potential data breach impact by 10% through proactive monitoring and rapid incident response, aligning with industry benchmarks.",
+          impact: "10% Risk Reduced"
         }
       ],
       tags: ["React", "Node.js", "Microsoft Graph API", "PowerShell", "Datto RMM", "Security"]
     },
     {
-      title: "Data Collection Researcher",
-      company: "University of California, Santa Cruz",
-      location: "Santa Cruz, CA",
-      period: "August 2022 – December 2023",
+      title: "AI/ML Engineer Intern",
+      company: "RWA Inc.",
+      location: "Remote",
+      period: "December 2024 – May 2025",
       icon: Database,
       highlights: [
         {
-          icon: Users,
-          text: "Developed Python-based analytical tools utilizing Google Cloud Natural Language API to evaluate data literacy trends across diverse age cohorts",
-          impact: "Multi-cohort Analysis"
+          icon: Brain,
+          text: "Developed and deployed an automated investment document summarization tool using OpenAI API and LangChain that processes pitch decks and financial reports into standardized 2-page analyst briefs, reducing initial document review time by 60% and enabling the investment team to evaluate 40% more opportunities per quarter.",
+          impact: "60% Faster Review"
         },
         {
           icon: TrendingUp,
-          text: "Designed and implemented a scalable data collection pipeline with cookie and IP tracking, increasing user behavior analysis efficiency by 30%",
-          impact: "30% Efficiency Gain"
+          text: "Architected and deployed a real-time KPI analytics dashboard using TypeScript, Node.js, TailwindCSS, and shadcn/ui that aggregated investment performance metrics across 200+ Web3 projects",
+          impact: "200+ KPIs"
         },
         {
           icon: Users,
-          text: "Presented original research on technology and ethics to 40+ academic and industry attendees, sparking discussion and raising awareness of data privacy issues",
-          impact: "40+ Attendees"
+          text: "Automated 12+ internal Web3 investment workflows using n8n, reducing manual review time by 45% and enabling real-time syncing of investor data across the RWA token launch pipeline.",
+          impact: "45% Less Manual"
         }
       ],
-      tags: ["Python", "Google Cloud", "Natural Language API", "Data Analytics", "Research"]
+      tags: ["OpenAI", "LangChain", "TypeScript", "Node.js", "TailwindCSS", "n8n"]
     }
   ];
 
@@ -155,20 +180,20 @@ const Experience = () => {
             <h3 className="text-2xl font-bold gradient-text mb-6">Combined Impact</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-cyber-green mb-2">200%</div>
+                <div className="text-3xl font-bold text-cyber-green mb-2">18%</div>
+                <div className="text-gray-400 text-sm">Voter Conversion Lift</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-cyber-blue mb-2">1M+</div>
+                <div className="text-gray-400 text-sm">Interactions Processed</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-cyber-purple mb-2">200%</div>
                 <div className="text-gray-400 text-sm">Client Growth</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-cyber-blue mb-2">10+</div>
-                <div className="text-gray-400 text-sm">Hours Saved/Month</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-cyber-purple mb-2">30%</div>
-                <div className="text-gray-400 text-sm">Efficiency Increase</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-cyber-pink mb-2">40+</div>
-                <div className="text-gray-400 text-sm">Research Attendees</div>
+                <div className="text-3xl font-bold text-cyber-pink mb-2">60%</div>
+                <div className="text-gray-400 text-sm">Faster Reviews</div>
               </div>
             </div>
           </div>

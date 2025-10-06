@@ -68,11 +68,11 @@ const Skills = () => {
       color: "text-cyber-blue",
       skills: [
         { name: "AWS (EC2, S3, Lambda)", level: 85 },
-        { name: "Google Cloud Platform", level: 80 },
+        { name: "Google Cloud Platform", level: 85 },
         { name: "Azure", level: 75 },
         { name: "Docker", level: 85 },
         { name: "Kubernetes", level: 75 },
-        { name: "CI/CD", level: 80 }
+        { name: "GitHub Actions (CI/CD)", level: 85 }
       ]
     },
     {

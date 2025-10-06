@@ -82,20 +82,22 @@ const About = () => {
              
              <h3 className="text-2xl font-bold text-white mb-4">My Journey</h3>
             <p className="text-gray-300 leading-relaxed">
-              As a CS student at UC Santa Cruz, I've been on an incredible journey of growth and discovery. 
-              My passion for technology began with curiosity about how things work and evolved into a 
-              mission to create solutions that matter.
+              As a Computer Science student at UC Santa Cruz, I've built a track record of delivering 
+              measurable impact across AI/ML, full-stack development, and cloud infrastructure. My journey 
+              has taken me from research labs to production systems processing millions of interactions.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              Currently working as a Software Engineer Intern at Beyond Computer LLC, I've had the 
-              opportunity to work on full-stack applications, automate complex processes, and directly 
-              contribute to business growth. My experience spans from frontend React development to 
-              backend API integration and AI/ML model development.
+              Currently serving as a Software Engineering Fellow at Movement Labs, I architect and deploy 
+              autonomous AI agent systems on Google Cloud Platform, driving 18% voter conversion increases 
+              and processing 1M+ interactions. Previously, I engineered full-stack solutions at Beyond 
+              Computer LLC that resulted in 200% client growth, and developed AI-powered investment tools 
+              at RWA Inc. that reduced document review time by 60%.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              What drives me is the intersection of technology and real-world impact. Whether it's 
-              building tools that help students manage their coursework or developing predictive models 
-              for crime prevention, I'm always looking for ways to make technology work for people.
+              My expertise spans the full technology stack—from fine-tuning 4B parameter AI models to 
+              building scalable cloud architectures. I'm passionate about creating solutions that deliver 
+              real business value, whether it's automating workflows, optimizing conversion rates, or 
+              enabling data-driven decision making at scale.
             </p>
           </motion.div>
 

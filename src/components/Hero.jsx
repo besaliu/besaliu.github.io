@@ -18,10 +18,10 @@ const Hero = () => {
   }, [currentIndex, fullText]);
 
   const stats = [
+    { value: '18%', label: 'Voter Conversion Lift' },
+    { value: '1M+', label: 'Interactions Processed' },
     { value: '200%', label: 'Client Growth' },
-    { value: '95%', label: 'AI Consistency' },
-    { value: '10+', label: 'Tech Stack' },
-    { value: '3+', label: 'Years Experience' }
+    { value: '95%', label: 'AI Consistency' }
   ];
 
   const socialLinks = [
@@ -109,7 +109,7 @@ const Hero = () => {
             transition={{ delay: 1 }}
           >
             <span className="neon-text text-cyber-blue">Full-Stack Developer</span> & 
-            <span className="neon-text text-cyber-pink ml-2">AI Engineer</span>
+            <span className="neon-text text-cyber-pink ml-2">AI/ML Engineer</span>
           </motion.div>
 
           <motion.p
@@ -118,9 +118,9 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 1.3 }}
           >
-            CS Student at UCSC building next-generation web applications with React, AI/ML, 
-            and cloud technologies. Currently driving <span className="text-cyber-green font-semibold">    200% client growth </span> 
-            as a Software Engineer Intern.
+            CS Student at UCSC building production AI agents and full-stack apps on GCP and React. 
+            Recently shipped systems processing <span className="text-cyber-green font-semibold">1M+ interactions</span> and enabling 
+            <span className="text-cyber-blue font-semibold"> 18% conversion lift</span>.
           </motion.p>
 
           {/* Stats Grid */}
