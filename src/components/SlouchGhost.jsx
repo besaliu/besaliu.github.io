@@ -186,12 +186,32 @@ const SlouchGhost = () => {
             </motion.div>
           </div>
 
-          {/* GitHub Link */}
+          {/* Homebrew Install Help */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : {}}
             transition={{ delay: 0.5 }}
-            className="text-center mt-8"
+            className="mt-8 max-w-2xl mx-auto"
+          >
+            <div className="bg-dark-bg/50 rounded-lg p-4 border border-cyber-blue/10">
+              <p className="text-sm text-gray-400 mb-2">
+                <span className="text-gray-300 font-medium">Don't have Homebrew?</span> Install it first with:
+              </p>
+              <code className="text-xs text-cyber-green font-mono break-all">
+                /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+              </code>
+              <p className="text-xs text-gray-500 mt-2">
+                Learn more at <a href="https://brew.sh" target="_blank" rel="noopener noreferrer" className="text-cyber-blue hover:underline">brew.sh</a>
+              </p>
+            </div>
+          </motion.div>
+
+          {/* GitHub Link */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={inView ? { opacity: 1 } : {}}
+            transition={{ delay: 0.6 }}
+            className="text-center mt-6"
           >
             <a
               href="https://github.com/besaliu/Slouch"
