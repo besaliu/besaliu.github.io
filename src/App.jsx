@@ -6,6 +6,7 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
+import SlouchGhost from './components/SlouchGhost';
 import Navigation from './components/Navigation';
 import ParticleBackground from './components/ParticleBackground';
 
@@ -54,6 +55,7 @@ function App() {
         <About />
         <Experience />
         <Projects />
+        <SlouchGhost />
         <Skills />
         <Contact />
       </motion.div>
