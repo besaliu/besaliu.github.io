@@ -12,8 +12,8 @@ const SlouchGhost = () => {
   const [copiedMac, setCopiedMac] = useState(false);
   const [copiedWin, setCopiedWin] = useState(false);
 
-  const macCommand = 'curl -fsSL https://raw.githubusercontent.com/besaliu/Slouch/main/install.sh | bash';
-  const winCommand = 'irm https://raw.githubusercontent.com/besaliu/Slouch/main/install.ps1 | iex';
+  const macCommand = 'brew install --cask besaliu/tap/slouch-ghost';
+  const winCommand = 'Coming soon';
 
   const copyToClipboard = (text, platform) => {
     navigator.clipboard.writeText(text);
@@ -97,9 +97,9 @@ const SlouchGhost = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-20"
         >
-          <h3 className="text-3xl font-bold text-white mb-4 text-center">Quick Install</h3>
+          <h3 className="text-3xl font-bold text-white mb-4 text-center">Install with Homebrew</h3>
           <p className="text-gray-400 text-center mb-8 max-w-2xl mx-auto">
-            Install with a single command. Open your terminal and paste the command for your platform.
+            Install with a single command. Open your terminal and paste the command below.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -144,7 +144,7 @@ const SlouchGhost = () => {
               </div>
 
               <p className="text-xs text-gray-500 mt-3">
-                Installs to /Applications and configures automatically.
+                Requires <a href="https://brew.sh" target="_blank" rel="noopener noreferrer" className="text-cyber-blue hover:underline">Homebrew</a>. Installs to /Applications automatically.
               </p>
             </motion.div>
 
@@ -296,7 +296,7 @@ const SlouchGhost = () => {
             <span className="text-cyber-green font-semibold">Open Source & Private by Design</span>
           </p>
           <p className="text-sm text-gray-400 mt-2">
-            Slouch Ghost is fully open-source. Your camera access is used only for local pose detection.
+            Slouch Ghost is fully open-source under the MIT license. Your camera access is used only for local pose detection.
             No data collection, no analytics, no accounts required.
           </p>
         </motion.div>
