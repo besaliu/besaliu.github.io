@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Download, Apple, Windows, Shield, Zap, Lock } from 'lucide-react';
+import { Download, Apple, Monitor, Shield, Zap, Lock } from 'lucide-react';
 
 const SlouchGhost = () => {
   const [ref, inView] = useInView({
@@ -38,7 +38,7 @@ const SlouchGhost = () => {
     },
     {
       platform: "Windows",
-      icon: Windows,
+      icon: Monitor,
       filename: "Slouch Ghost_0.1.0_x64-setup.exe",
       description: "Windows 10 & 11",
       downloadUrl: "https://github.com/besaliu/Slouch/releases/download/v0.1.0/Slouch Ghost_0.1.0_x64-setup.exe",
