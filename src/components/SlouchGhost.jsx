@@ -31,17 +31,17 @@ const SlouchGhost = () => {
     {
       platform: "macOS",
       icon: Apple,
-      filename: "Slouch Ghost_0.1.0_aarch64.dmg",
+      filename: "Slouch Ghost_0.1.1_aarch64.dmg",
       description: "Apple Silicon & Intel",
-      downloadUrl: "https://github.com/besaliu/Slouch/releases/download/v0.1.0/rw.53081.Slouch.Ghost_0.1.0_aarch64.dmg",
+      downloadUrl: "https://github.com/besaliu/Slouch/releases/download/v0.1.1/Slouch Ghost.dmg",
       available: true
     },
     {
       platform: "Windows",
       icon: Monitor,
-      filename: "Slouch Ghost_0.1.0_x64-setup.exe",
+      filename: "Slouch Ghost_0.1.1_x64-setup.exe",
       description: "Windows 10 & 11",
-      downloadUrl: "https://github.com/besaliu/Slouch/releases/download/v0.1.0/Slouch Ghost_0.1.0_x64-setup.exe",
+      downloadUrl: "https://github.com/besaliu/Slouch/releases/download/v0.1.1/Slouch Ghost_0.1.1_x64-setup.exe",
       available: false // Will be available when built on Windows
     }
   ];
