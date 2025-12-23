@@ -33,7 +33,7 @@ const SlouchGhost = () => {
       icon: Apple,
       filename: "Slouch Ghost_0.1.0_aarch64.dmg",
       description: "Apple Silicon & Intel",
-      downloadUrl: "https://github.com/besaliu/Slouch/releases/download/v0.1.0/Slouch Ghost.dmg",
+      downloadUrl: "https://github.com/besaliu/Slouch/releases/download/v0.1.0/rw.53081.Slouch.Ghost_0.1.0_aarch64.dmg",
       available: true
     },
     {
