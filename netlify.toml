@@ -1,6 +1,6 @@
 [build]
   publish = "dist"
-  command = "npm ci && tsc && npx vite build"
+  command = "npm ci && npx tsc && npx vite build"
 
 [build.environment]
   NODE_VERSION = "18"
