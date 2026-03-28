@@ -11,27 +11,27 @@ const About = () => {
 
   const highlights = [
     {
-      icon: Rocket,
-      title: "Client Growth Expert",
-      description: "Engineered solutions that drove 200% increase in client acquisitions",
+      icon: Brain,
+      title: "AI Engineer",
+      description: "Shipping intelligent agents with Google ADK, LangGraph, and LLM APIs at enterprise scale",
       color: "text-cyber-green"
     },
     {
-      icon: Brain,
-      title: "AI/ML Specialist",
-      description: "Fine-tuned 4B parameter AI model achieving 95% personality consistency in email responses",
+      icon: Award,
+      title: "Hackathon Finalist",
+      description: "Nebius AI Hackathon 2026 — built autonomous NOC agent remediating DDoS attacks in under 15 seconds",
       color: "text-cyber-purple"
     },
     {
       icon: Code,
-      title: "Full-Stack Developer",
-      description: "Expert in React, Node.js, Python, and modern cloud technologies",
+      title: "Software Engineer",
+      description: "Python, TypeScript, React, FastAPI — shipping production systems with real business impact",
       color: "text-cyber-blue"
     },
     {
-      icon: Award,
-      title: "Research Pioneer",
-      description: "Published original research on data literacy and technology ethics",
+      icon: Rocket,
+      title: "Automation Specialist",
+      description: "Consolidated manual workflows into AI agents, cutting setup times by 80%+",
       color: "text-cyber-pink"
     }
   ];
@@ -50,9 +50,8 @@ const About = () => {
             About Me
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            I'm a passionate Computer Science student at UCSC with a focus on building 
-            innovative solutions that make a real impact. From increasing client growth 
-            by 200% to developing cutting-edge AI models, I thrive on solving complex challenges.
+            AI engineer who has built and shipped AI-powered automation for two companies, integrating
+            intelligent agents and task automation pipelines into production systems.
           </p>
         </motion.div>
 
@@ -82,56 +81,23 @@ const About = () => {
              
              <h3 className="text-2xl font-bold text-white mb-4">My Journey</h3>
             <p className="text-gray-300 leading-relaxed">
-              As a Computer Science student at UC Santa Cruz, I've built a track record of delivering 
-              measurable impact across AI/ML, full-stack development, and cloud infrastructure. My journey 
-              has taken me from research labs to production systems processing millions of interactions.
+              Computer Science student at UC Santa Cruz (graduating June 2026) with a track record of
+              shipping AI-powered automation into production at multiple companies.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              Currently serving as a Software Engineering Fellow at Movement Labs, I architect and deploy 
-              autonomous AI agent systems on Google Cloud Platform, driving 18% voter conversion increases 
-              and processing 1M+ interactions. Previously, I engineered full-stack solutions at Beyond 
-              Computer LLC that resulted in 200% client growth, and developed AI-powered investment tools 
-              at RWA Inc. that reduced document review time by 60%.
+              Currently an AI Engineer Intern at Keysight Technologies, where I built a Python MCP server
+              exposing 45 tools and a Google ADK agentic system that replaces multi-step manual test
+              workflows with natural language — cutting setup from 30+ minutes to under 5. Previously, I
+              deployed a Google ADK agent on GCP Cloud Run at Movement Labs handling 500+ daily conversations,
+              and redesigned Beyond Computer's website end-to-end to double their inbound leads.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              My expertise spans the full technology stack—from fine-tuning 4B parameter AI models to 
-              building scalable cloud architectures. I'm passionate about creating solutions that deliver 
-              real business value, whether it's automating workflows, optimizing conversion rates, or 
-              enabling data-driven decision making at scale.
+              I also architected an autonomous NOC agent that detects and remediates network incidents in
+              under 15 seconds with zero human intervention using LangGraph and a 12-container stack. I'm
+              driven by building intelligent systems that automate away manual toil.
             </p>
           </motion.div>
 
-          {/* Achievement Stats */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="cyber-card"
-          >
-            <h3 className="text-2xl font-bold text-white mb-6">Key Achievements</h3>
-            <div className="space-y-4">
-              <div className="flex items-center justify-between">
-                <span className="text-gray-300">Client Growth Impact</span>
-                <span className="text-cyber-green font-bold text-xl">+200%</span>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-gray-300">AI Model Consistency</span>
-                <span className="text-cyber-blue font-bold text-xl">95%</span>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-gray-300">Email Response Time Saved</span>
-                <span className="text-cyber-purple font-bold text-xl">73%</span>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-gray-300">Data Breach Reduction</span>
-                <span className="text-cyber-pink font-bold text-xl">10%</span>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-gray-300">Research Presentations</span>
-                <span className="text-cyber-green font-bold text-xl">40+ attendees</span>
-              </div>
-            </div>
-          </motion.div>
         </div>
 
         {/* Highlights Grid */}
@@ -172,7 +138,7 @@ const About = () => {
               University of California, Santa Cruz
             </div>
             <div className="text-cyber-blue mb-2">
-              B.S. in Computer Science, Minor in Technology and Information Management
+              B.S. in Computer Science — GPA: 3.6
             </div>
             <div className="text-gray-400">
               Aug. 2022 – June 2026

@@ -11,32 +11,57 @@ const Experience = () => {
 
   const experiences = [
     {
-      title: "Software Engineering Fellow",
+      title: "AI Engineer Intern",
+      company: "Keysight Technologies",
+      location: "Remote",
+      period: "January 2026 – Present",
+      icon: Brain,
+      highlights: [
+        {
+          icon: Database,
+          text: "Developed a Python MCP server exposing 45 tools across Keysight's KS8500B platform, allowing the entire test automation platform to be managed by an AI agent.",
+          impact: "45 MCP Tools"
+        },
+        {
+          icon: Activity,
+          text: "Replaced multi-step manual test workflows with a Google ADK agentic system that executes tests from natural language, cutting average test setup from 30+ minutes to under 5.",
+          impact: "6x Faster Setup"
+        },
+        {
+          icon: Shield,
+          text: "Designed a parametrized evaluation framework (pytest) measuring model accuracy, tool selection performance, and latency, achieving 93% accuracy across 30+ workflow scenarios.",
+          impact: "93% Accuracy"
+        }
+      ],
+      tags: ["Python", "Google ADK", "MCP", "pytest", "Pydantic", "LLM APIs"]
+    },
+    {
+      title: "Software Engineer Fellow (Contract)",
       company: "Movement Labs",
       location: "Remote",
-      period: "September 2025 – Present",
+      period: "September 2025 – December 2025",
       icon: Cloud,
       highlights: [
         {
           icon: Activity,
-          text: "Architected and deployed autonomous AI agent systems on Google Cloud Run using Vertex AI and Python, orchestrating multi-step conversational workflows that increased voter conversion rates by 18% during the 2025 election cycle.",
-          impact: "18% Conversion"
-        },
-        {
-          icon: Database,
-          text: "Engineered scalable agentic AI pipelines leveraging GCP, Vertex AI LLMs, and Cloud Functions to process 1M+ voter interactions",
-          impact: "1M+ Events"
+          text: "Deployed a Google ADK based agent on GCP Cloud Run integrated with a messaging platform, handling 500+ daily conversations with persistent session state.",
+          impact: "500+ Daily Conversations"
         },
         {
           icon: Shield,
-          text: "Implemented production-grade AI agent infrastructure with automated testing, monitoring, and fail-safes using Cloud Logging and Cloud Monitoring, reducing manual intervention by 67% and ensuring compliance with campaign messaging regulations.",
-          impact: "67% Fewer Interventions"
+          text: "Created a 49-case automated test suite integrated into CI/CD pipelines to gate every deployment, catching 12+ regressions before production and ensuring system robustness.",
+          impact: "12+ Regressions Caught"
+        },
+        {
+          icon: Users,
+          text: "Consolidated 4 manual workflows into a single intelligent agent for campaign creation and SMS deployment, reducing setup time from 45 minutes to under 10.",
+          impact: "78% Faster Setup"
         }
       ],
-      tags: ["GCP", "Vertex AI", "Cloud Run", "Cloud Functions", "Python", "Monitoring"]
+      tags: ["Google ADK", "GCP", "Cloud Run", "Python", "CI/CD", "Testing"]
     },
     {
-      title: "Software Engineer Intern & Network Security Engineer Intern",
+      title: "Software Engineer Intern",
       company: "Beyond Computer LLC",
       location: "Petaluma, CA",
       period: "June 2025 – September 2025",
@@ -44,46 +69,16 @@ const Experience = () => {
       highlights: [
         {
           icon: TrendingUp,
-          text: "Engineered a full-stack solution featuring responsive UI redesign and automated client onboarding workflows (React, Node.js, Microsoft Graph API), driving a 200% increase in client acquisitions.",
-          impact: "200% Growth"
+          text: "Redesigned the company website end-to-end (React, Node.js) with responsive UI, delivering a product that increased monthly lead generation by 100%.",
+          impact: "100% More Leads"
         },
         {
           icon: Shield,
-          text: "Automated device management with PowerShell and Datto RMM API, saving 10+ hours/month and enhancing security compliance.",
+          text: "Built REST API integrations with Datto RMM for automated device management, documenting findings and processes while saving 10+ hours/month on operations.",
           impact: "10+ hrs/mo Saved"
-        },
-        {
-          icon: Database,
-          text: "Reduced potential data breach impact by 10% through proactive monitoring and rapid incident response, aligning with industry benchmarks.",
-          impact: "10% Risk Reduced"
         }
       ],
-      tags: ["React", "Node.js", "Microsoft Graph API", "PowerShell", "Datto RMM", "Security"]
-    },
-    {
-      title: "AI/ML Engineer Intern",
-      company: "RWA Inc.",
-      location: "Remote",
-      period: "December 2024 – May 2025",
-      icon: Database,
-      highlights: [
-        {
-          icon: Brain,
-          text: "Developed and deployed an automated investment document summarization tool using OpenAI API and LangChain that processes pitch decks and financial reports into standardized 2-page analyst briefs, reducing initial document review time by 60% and enabling the investment team to evaluate 40% more opportunities per quarter.",
-          impact: "60% Faster Review"
-        },
-        {
-          icon: TrendingUp,
-          text: "Architected and deployed a real-time KPI analytics dashboard using TypeScript, Node.js, TailwindCSS, and shadcn/ui that aggregated investment performance metrics across 200+ Web3 projects",
-          impact: "200+ KPIs"
-        },
-        {
-          icon: Users,
-          text: "Automated 12+ internal Web3 investment workflows using n8n, reducing manual review time by 45% and enabling real-time syncing of investor data across the RWA token launch pipeline.",
-          impact: "45% Less Manual"
-        }
-      ],
-      tags: ["OpenAI", "LangChain", "TypeScript", "Node.js", "TailwindCSS", "n8n"]
+      tags: ["React", "Node.js", "Datto RMM", "REST APIs"]
     }
   ];
 
@@ -180,20 +175,20 @@ const Experience = () => {
             <h3 className="text-2xl font-bold gradient-text mb-6">Combined Impact</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-cyber-green mb-2">18%</div>
-                <div className="text-gray-400 text-sm">Voter Conversion Lift</div>
+                <div className="text-3xl font-bold text-cyber-green mb-2">93%</div>
+                <div className="text-gray-400 text-sm">Tool Routing Accuracy</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-cyber-blue mb-2">1M+</div>
-                <div className="text-gray-400 text-sm">Interactions Processed</div>
+                <div className="text-3xl font-bold text-cyber-blue mb-2">500+</div>
+                <div className="text-gray-400 text-sm">Daily Conversations</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-cyber-purple mb-2">200%</div>
-                <div className="text-gray-400 text-sm">Client Growth</div>
+                <div className="text-3xl font-bold text-cyber-purple mb-2">6x</div>
+                <div className="text-gray-400 text-sm">Faster Test Setup</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-cyber-pink mb-2">60%</div>
-                <div className="text-gray-400 text-sm">Faster Reviews</div>
+                <div className="text-3xl font-bold text-cyber-pink mb-2">100%</div>
+                <div className="text-gray-400 text-sm">More Inbound Leads</div>
               </div>
             </div>
           </div>

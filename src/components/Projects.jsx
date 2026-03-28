@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { ExternalLink, Github, Brain, Calendar, Target, Database } from 'lucide-react';
+import { ExternalLink, Github, Brain, Shield, Target, Database } from 'lucide-react';
 
 const Projects = () => {
   const [ref, inView] = useInView({
@@ -11,72 +11,38 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "AI-Powered Email Response Assistant",
-      description: "Fine-tuned a 4B Gemma model with Unsloth + LoRA on 500+ training pairs to draft business emails with 95% personality consistency.",
-      period: "June 2025 – July 2025",
-      icon: Brain,
+      title: "Autonomous NOC Agent",
+      description: "Architected an intelligent agent that autonomously detects and remediates network incidents in under 15 seconds with zero human intervention.",
+      period: "March 2026",
+      icon: Shield,
       image: "/api/placeholder/400/300",
       highlights: [
-        "73% reduction in drafting time",
-        "100+ responses processed daily locally",
-        "$200+/month saved vs cloud APIs"
+        "Full-stack app with Python backend + React dashboard streaming real-time agent decisions via SSE",
+        "LangGraph agentic orchestration with ReAct reasoning loop for autonomous troubleshooting",
+        "Multi-step task automation with Prometheus integration for incident detection"
       ],
-      technologies: ["Python", "Gemma", "Unsloth", "LoRA", "LangChain"],
+      technologies: ["LangGraph", "Python", "React", "Prometheus", "SSE", "Docker"],
       github: "#",
       demo: "#",
-      impact: "95% Consistency",
+      impact: "<15s Remediation",
       color: "from-cyber-green to-cyber-blue"
     },
     {
-      title: "Full-Stack Client Portal",
-      description: "Automated client onboarding and responsive UI that contributed to 200% increase in client acquisitions for Beyond Computer LLC.",
-      period: "June 2025 – September 2025",
-      icon: Target,
+      title: "AI Email Response Assistant",
+      description: "Fine-tuned a 4B-parameter LLM with LoRA on 500+ email-response pairs to achieve consistent tone matching without external API dependencies.",
+      period: "June 2025",
+      icon: Brain,
       image: "/api/placeholder/400/300",
       highlights: [
-        "Microsoft Graph API integration",
-        "Automated onboarding workflows",
-        "Modern responsive design"
+        "Local on-device pipeline optimized for efficiency and latency",
+        "Fully on-device — sensitive correspondence never leaves the machine",
+        "Consistent tone matching across business communication styles"
       ],
-      technologies: ["React", "Node.js", "Microsoft Graph API", "Express", "MongoDB"],
+      technologies: ["Python", "Unsloth", "LoRA", "Gemma 4B"],
       github: "#",
-      demo: "https://beyondcomputer.netlify.app/",
-      impact: "200% Growth",
+      demo: "#",
+      impact: "100% Private",
       color: "from-cyber-pink to-cyber-purple"
-    },
-    {
-      title: "Investment Document Summarizer",
-      description: "Automated summarization pipeline converting pitch decks and financials into 2-page analyst briefs, reducing review time by 60%.",
-      period: "December 2024 – May 2025",
-      icon: Database,
-      image: "/api/placeholder/400/300",
-      highlights: [
-        "OpenAI API + LangChain",
-        "Standardized brief generation",
-        "Enabled +40% opportunities reviewed"
-      ],
-      technologies: ["TypeScript", "Node.js", "OpenAI", "LangChain"],
-      github: "#",
-      demo: "#",
-      impact: "60% Faster",
-      color: "from-cyber-blue to-cyber-purple"
-    },
-    {
-      title: "Real-time KPI Analytics Dashboard",
-      description: "KPI dashboard aggregating metrics across 200+ Web3 projects with shadcn/ui and TailwindCSS.",
-      period: "December 2024 – May 2025",
-      icon: Calendar,
-      image: "/api/placeholder/400/300",
-      highlights: [
-        "200+ projects tracked",
-        "Real-time metrics aggregation",
-        "TypeScript + Node.js backend"
-      ],
-      technologies: ["TypeScript", "Node.js", "TailwindCSS", "shadcn/ui"],
-      github: "#",
-      demo: "#",
-      impact: "200+ Projects",
-      color: "from-cyber-purple to-cyber-pink"
     }
   ];
 
@@ -204,12 +170,12 @@ const Projects = () => {
             <h3 className="text-2xl font-bold gradient-text mb-6">Project Impact</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-cyber-green mb-2">200%</div>
-                <div className="text-gray-400 text-sm">Client Growth</div>
+                <div className="text-3xl font-bold text-cyber-green mb-2">&lt;15s</div>
+                <div className="text-gray-400 text-sm">DDoS Auto-Remediation</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-cyber-blue mb-2">95%</div>
-                <div className="text-gray-400 text-sm">AI Consistency</div>
+                <div className="text-3xl font-bold text-cyber-blue mb-2">12</div>
+                <div className="text-gray-400 text-sm">Container Stack</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-cyber-purple mb-2">500+</div>

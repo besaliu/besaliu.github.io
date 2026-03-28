@@ -41,8 +41,8 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "besaliu@ucsc.edu",
-      href: "mailto:besaliu@ucsc.edu",
+      value: "benliu297@gmail.com",
+      href: "mailto:benliu297@gmail.com",
       color: "text-cyber-blue"
     },
     {
@@ -112,9 +112,9 @@ const Contact = () => {
             <div>
               <h3 className="text-2xl font-bold text-white mb-6">Get in Touch</h3>
               <p className="text-gray-300 leading-relaxed mb-8">
-                I'm currently seeking full-time opportunities starting in 2026, but I'm also open to 
-                internships, freelance projects, and interesting collaborations. Whether you have a 
-                project in mind or just want to chat about technology, feel free to reach out!
+                I'm graduating in June 2026 and actively seeking full-time software engineering and AI
+                engineering roles. Whether you have an opportunity, a project in mind, or just want to
+                chat about building with AI, feel free to reach out!
               </p>
             </div>
 

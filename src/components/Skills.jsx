@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Code, Database, Cloud, Cog, TestTube, Palette } from 'lucide-react';
+import { Code, Database, Cloud, Cog, Palette } from 'lucide-react';
 
 const Skills = () => {
   const [ref, inView] = useInView({
@@ -15,51 +15,49 @@ const Skills = () => {
       icon: Code,
       color: "text-cyber-blue",
       skills: [
-        { name: "JavaScript/TypeScript", level: 95 },
-        { name: "Python", level: 90 },
-        { name: "Java", level: 85 },
+        { name: "Python", level: 95 },
         { name: "C/C++", level: 80 },
-        { name: "Go", level: 75 },
-        { name: "SQL", level: 90 }
+        { name: "Java", level: 80 },
+        { name: "TypeScript", level: 85 },
+        { name: "JavaScript", level: 90 },
+        { name: "SQL", level: 85 },
+        { name: "Bash", level: 80 }
       ]
     },
     {
-      title: "Frontend",
-      icon: Palette,
-      color: "text-cyber-pink",
+      title: "AI/ML & Deep Learning",
+      icon: Cog,
+      color: "text-cyber-purple",
       skills: [
-        { name: "React/Next.js", level: 95 },
-        { name: "TailwindCSS", level: 90 },
-        { name: "Redux", level: 85 },
-        { name: "Angular", level: 80 },
-        { name: "Vue.js", level: 75 },
-        { name: "SASS/SCSS", level: 85 }
+        { name: "LangChain", level: 90 },
+        { name: "LangGraph", level: 90 },
+        { name: "Google ADK", level: 90 },
+        { name: "PyTorch", level: 80 },
+        { name: "LLM Fine-tuning (LoRA)", level: 85 },
+        { name: "RAG", level: 85 }
       ]
     },
     {
-      title: "Backend",
+      title: "Backend & APIs",
       icon: Database,
       color: "text-cyber-green",
       skills: [
-        { name: "Node.js/Express", level: 90 },
-        { name: "Django/Flask", level: 85 },
-        { name: "Spring Boot", level: 80 },
-        { name: "RESTful APIs", level: 95 },
-        { name: "GraphQL", level: 85 },
-        { name: "gRPC", level: 75 }
+        { name: "FastAPI", level: 90 },
+        { name: "Node.js", level: 90 },
+        { name: "REST API Design", level: 95 },
+        { name: "PostgreSQL (SQL)", level: 85 },
+        { name: "Pydantic", level: 85 }
       ]
     },
     {
-      title: "Databases",
-      icon: Database,
-      color: "text-cyber-purple",
+      title: "Frontend / Web",
+      icon: Palette,
+      color: "text-cyber-pink",
       skills: [
-        { name: "PostgreSQL", level: 90 },
-        { name: "MongoDB", level: 85 },
-        { name: "Firebase", level: 90 },
-        { name: "Redis", level: 80 },
-        { name: "MySQL", level: 85 },
-        { name: "SQLite", level: 85 }
+        { name: "React", level: 95 },
+        { name: "Next.js", level: 85 },
+        { name: "TailwindCSS", level: 90 },
+        { name: "Server-Sent Events (SSE)", level: 85 }
       ]
     },
     {
@@ -67,33 +65,18 @@ const Skills = () => {
       icon: Cloud,
       color: "text-cyber-blue",
       skills: [
-        { name: "AWS (EC2, S3, Lambda)", level: 85 },
-        { name: "Google Cloud Platform", level: 85 },
-        { name: "Azure", level: 75 },
+        { name: "GCP", level: 90 },
         { name: "Docker", level: 85 },
-        { name: "Kubernetes", level: 75 },
-        { name: "GitHub Actions (CI/CD)", level: 85 }
-      ]
-    },
-    {
-      title: "Testing & Tools",
-      icon: TestTube,
-      color: "text-cyber-green",
-      skills: [
-        { name: "Jest/Cypress", level: 85 },
-        { name: "PyTest", level: 80 },
-        { name: "Selenium", level: 75 },
-        { name: "Postman", level: 90 },
-        { name: "Git/GitHub", level: 95 },
-        { name: "VS Code", level: 95 }
+        { name: "Git", level: 95 },
+        { name: "GitHub Actions", level: 85 },
+        { name: "CI/CD", level: 85 },
+        { name: "Prometheus", level: 80 }
       ]
     }
   ];
 
   const certifications = [
-    "AWS Cloud Practitioner (In Progress)",
-    "Google Cloud Associate (Planned)",
-    "MongoDB Developer Associate (Planned)"
+    "Nebius AI Hackathon 2026 Finalist"
   ];
 
   return (
@@ -175,12 +158,12 @@ const Skills = () => {
             <h3 className="text-2xl font-bold gradient-text mb-6">Specializations</h3>
             <div className="space-y-4">
               {[
-                "Full-Stack Web Development",
-                "Machine Learning & AI",
-                "Cloud Architecture & DevOps",
-                "API Design & Integration",
-                "Data Analysis & Visualization",
-                "Security & Compliance"
+                "Agentic AI Systems",
+                "LLM Orchestration (ADK/LangGraph)",
+                "Prompt Engineering & RAG",
+                "Model Fine-tuning (LoRA)",
+                "Full-Stack Application Development",
+                "Production AI Evaluation Pipelines"
               ].map((spec, index) => (
                 <motion.div
                   key={index}
@@ -200,12 +183,12 @@ const Skills = () => {
             <h3 className="text-2xl font-bold gradient-text mb-6">Methodologies</h3>
             <div className="space-y-4">
               {[
-                "Agile/Scrum Development",
-                "Test-Driven Development (TDD)",
-                "Microservices Architecture",
-                "RESTful API Design",
-                "Responsive Web Design",
-                "Accessibility (a11y) Standards"
+                "Agentic Workflow Design",
+                "Test-Driven Evaluation",
+                "REST API Design & Integration",
+                "CI/CD Pipeline Integration",
+                "MCP Server Development",
+                "Responsive Web Design"
               ].map((method, index) => (
                 <motion.div
                   key={index}
@@ -229,8 +212,8 @@ const Skills = () => {
           transition={{ duration: 0.8, delay: 1.2 }}
           className="cyber-card text-center"
         >
-          <h3 className="text-2xl font-bold gradient-text mb-6">Certifications & Learning</h3>
-          <p className="text-gray-400 mb-6">Continuously expanding knowledge through industry certifications</p>
+          <h3 className="text-2xl font-bold gradient-text mb-6">Recognition</h3>
+          <p className="text-gray-400 mb-6">Competing and building at the cutting edge of AI</p>
           <div className="flex flex-wrap justify-center gap-4">
             {certifications.map((cert, index) => (
               <motion.div
