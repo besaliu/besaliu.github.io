@@ -22,8 +22,8 @@ const Projects = () => {
         "Multi-step task automation with Prometheus integration for incident detection"
       ],
       technologies: ["LangGraph", "Python", "React", "Prometheus", "SSE", "Docker"],
-      github: "#",
-      demo: "#",
+      github: "https://github.com/MasonD-007/NOC_Agent",
+      demo: "https://github.com/MasonD-007/NOC_Agent",
       impact: "<15s Remediation",
       color: "from-cyber-green to-cyber-blue"
     },
